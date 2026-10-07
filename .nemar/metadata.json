@@ -1,0 +1,138 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Christian Riccio": {
+      "orcid": "0000-0003-1837-1734",
+      "affiliations": [
+        {
+          "name": "University of Naples Federico II",
+          "identifier": "https://ror.org/05290cv24",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Angelo Martone": {
+      "orcid": "0000-0001-6042-6650",
+      "affiliations": [
+        {
+          "name": "Italian Aerospace Research Centre",
+          "identifier": "https://ror.org/01cqx0m58",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Gaetano Zazzaro": {
+      "orcid": "0000-0002-5867-4281",
+      "affiliations": [
+        {
+          "name": "Italian Aerospace Research Centre",
+          "identifier": "https://ror.org/01cqx0m58",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Luigi Pavone": {
+      "orcid": "0000-0002-0454-9784",
+      "affiliations": [
+        {
+          "name": "IRCCS Neuromed"
+        }
+      ]
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.10808054",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.3390/data9050061",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.3390/biomedicines10071491",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1016/j.iot.2019.03.002",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1109/HPCC-SmartCity-DSS50907.2020.00175",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.5281/zenodo.3455611",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000388",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000388",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "This research received no external funding."
+    }
+  ],
+  "title": "Training datasets for epilepsy analysis: sliding-window features derived from the Freiburg intracranial EEG database (Riccio et al. 2024), processed-data release",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "sizes": [
+    "13.86 GB (21 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".json",
+    ".md",
+    ".py",
+    ".tsv",
+    ".yml"
+  ],
+  "description": "This derivative dataset redistributes, unchanged, 20 per-patient feature tables derived from the Freiburg intracranial EEG database. Each row is a 2-second sliding window (1-second step) with 1080 univariate and bivariate features computed for six electrodes across six frequency bands (alpha to high gamma). Windows are labelled by seizure phase (pre-ictal, ictal, post-ictal, inter-ictal), supporting machine-learning work on epileptic seizure detection and analysis. No raw recordings are included.",
+  "methods_description": "Six intracranial EEG electrodes per patient (three in the epileptic focus, three outside it) were band-pass filtered into six bands (8-13, 13-21, 21-30, 30-40, 40-70, 70-120 Hz). Sliding windows of 2 s with a 1 s step were used on 256 Hz data. Fourteen univariate and eight bivariate features were computed per electrode and band, giving 1080 features per window. Each window was labelled PRE, IKTAL, POST or INTER.",
+  "keywords": [
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Seizures",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
+    },
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "feature extraction"
+    },
+    {
+      "term": "sliding window"
+    },
+    {
+      "term": "machine learning"
+    }
+  ],
+  "source_hash": "8b5513ccd579d4d5f6fd626e7d0990bc1a7f6aaa5dbf71eead4de47e7d9ad9cc"
+}

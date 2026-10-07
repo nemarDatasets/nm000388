@@ -1,0 +1,41 @@
+{
+  "participant_id": {
+    "Description": "sub-PatNNN, NNN = patient number of the Freiburg EEG database as used in the source file name PatNNN.csv (patient 12 is not in the release)."
+  },
+  "freiburg_patient": {
+    "Description": "Freiburg EEG database patient number (from the file name)."
+  },
+  "source_file": {
+    "Description": "File name in Zenodo record 10808054."
+  },
+  "n_windows": {
+    "Description": "Number of data rows (2-s windows, 1-s step) in the feature table; computed by the repackaging script."
+  },
+  "n_registrations": {
+    "Description": "Number of distinct values of the Registration column (Freiburg recordings the windows come from); computed."
+  },
+  "n_PRE": {
+    "Description": "Rows with Actual TAG = PRE (pre-ictal); computed."
+  },
+  "n_PRE_IKTAL": {
+    "Description": "Rows with Actual TAG = PRE_IKTAL (window spanning the pre-ictal/ictal boundary; label present in the files, not described in the paper); computed."
+  },
+  "n_IKTAL": {
+    "Description": "Rows with Actual TAG = IKTAL (ictal); computed."
+  },
+  "n_IKTAL_POST": {
+    "Description": "Rows with Actual TAG = IKTAL_POST (window spanning the ictal/post-ictal boundary; label present in the files, not described in the paper); computed."
+  },
+  "n_POST": {
+    "Description": "Rows with Actual TAG = POST (post-ictal); computed."
+  },
+  "n_INTER": {
+    "Description": "Rows with Actual TAG = INTER (inter-ictal); computed."
+  },
+  "age": {
+    "Description": "Not reported per patient in Riccio et al. 2024 or the Zenodo record: n/a."
+  },
+  "sex": {
+    "Description": "Not reported per patient in Riccio et al. 2024 or the Zenodo record: n/a."
+  }
+}

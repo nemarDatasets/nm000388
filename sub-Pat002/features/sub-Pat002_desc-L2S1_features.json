@@ -1,0 +1,120 @@
+{
+  "Description": "Sliding-window feature table of one Freiburg patient (Riccio et al. 2024). Comma-separated values, header row, bytes identical to the file of the same patient in Zenodo record 10808054.",
+  "Delimiter": ",",
+  "SourceSamplingFrequency": 256,
+  "WindowLength": 2,
+  "WindowLengthUnits": "s",
+  "WindowStep": 1,
+  "WindowStepUnits": "s",
+  "Columns": {
+    "Registration": "Registration (recording) number of the Freiburg EEG database the window was extracted from.",
+    "Actual Timestamp": "Initial and final sample of the window, \"first_last\" (e.g. 1_512 = 2 s at 256 Hz).",
+    "Actual TAG": "Seizure phase of the window: PRE (pre-ictal), IKTAL (ictal), POST (post-ictal), INTER (inter-ictal); the files also contain PRE_IKTAL and IKTAL_POST for the few windows that span a phase boundary (not described in the paper).",
+    "E<i>B<j><FC>M<k>": "1080 feature columns. i = electrode 1-6 (1-3 in the epileptic focus, 4-6 outside the focus); j = lower edge of the band (8, 13, 21, 30, 40, 70 Hz); FC = feature code (FeatureCodes); k = method: U = univariate, A = bivariate against the previous window, B = bivariate against the zero signal."
+  },
+  "BandCodes": {
+    "B8": "alpha (8-13 Hz)",
+    "B13": "beta1 (13-21 Hz)",
+    "B21": "beta2 (21-30 Hz)",
+    "B30": "low gamma (30-40 Hz)",
+    "B40": "medium gamma (40-70 Hz)",
+    "B70": "high gamma (70-120 Hz)"
+  },
+  "FeatureCodes": {
+    "SD": {
+      "Name": "Standard Deviation",
+      "Type": "univariate"
+    },
+    "KU": {
+      "Name": "Kurtosis",
+      "Type": "univariate"
+    },
+    "HM": {
+      "Name": "Hjorth Mobility",
+      "Type": "univariate"
+    },
+    "SH": {
+      "Name": "Shannon Entropy",
+      "Type": "univariate"
+    },
+    "LE": {
+      "Name": "Log-Energy Entropy",
+      "Type": "univariate"
+    },
+    "KC": {
+      "Name": "Kolmogorov Complexity",
+      "Type": "univariate"
+    },
+    "LU": {
+      "Name": "Upper Limit Lempel–Ziv Complexity",
+      "Type": "univariate"
+    },
+    "LL": {
+      "Name": "Lower Limit Lempel–Ziv Complexity",
+      "Type": "univariate"
+    },
+    "PD": {
+      "Name": "Peak Displacement",
+      "Type": "univariate"
+    },
+    "PP": {
+      "Name": "Predominant Period",
+      "Type": "univariate"
+    },
+    "AP": {
+      "Name": "Averaged Period",
+      "Type": "univariate"
+    },
+    "SG": {
+      "Name": "Squared Grade",
+      "Type": "univariate"
+    },
+    "SP": {
+      "Name": "Squared Time to Peak",
+      "Type": "univariate"
+    },
+    "IP": {
+      "Name": "Inverted Time to Peak",
+      "Type": "univariate"
+    },
+    "CE": {
+      "Name": "Conditional Entropy",
+      "Type": "bivariate"
+    },
+    "JE": {
+      "Name": "Joint Entropy",
+      "Type": "bivariate"
+    },
+    "MI": {
+      "Name": "Mutual Information",
+      "Type": "bivariate"
+    },
+    "CC": {
+      "Name": "Cross Correlation Index",
+      "Type": "bivariate"
+    },
+    "ED": {
+      "Name": "Euclidean Distance",
+      "Type": "bivariate"
+    },
+    "LD": {
+      "Name": "Levenshtein Distance",
+      "Type": "bivariate"
+    },
+    "DT": {
+      "Name": "Dynamic Time Warping",
+      "Type": "bivariate"
+    },
+    "LC": {
+      "Name": "Longest Common Sub-Sequence",
+      "Type": "bivariate"
+    }
+  },
+  "Sources": [
+    "bids::sourcedata/zenodo-10808054/README.md"
+  ],
+  "Reference": "Riccio et al. 2024, Data 9(5):61, Section 2 and Table 4; Zenodo record README.md.",
+  "RowCount": 104342,
+  "ZenodoFile": "Pat002.csv",
+  "ZenodoMD5": "16f1cef92033750900da6ae7196c1b00"
+}

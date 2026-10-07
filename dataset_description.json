@@ -1,0 +1,58 @@
+{
+  "Name": "Training datasets for epilepsy analysis: sliding-window features derived from the Freiburg intracranial EEG database (Riccio et al. 2024), processed-data release",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Christian Riccio",
+    "Angelo Martone",
+    "Gaetano Zazzaro",
+    "Luigi Pavone"
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "Training Builder (TrB)",
+      "Description": "Authors' feature-extraction software (Riccio et al. 2024, Section 3): band-pass filtering of 6 intracranial EEG electrodes (3 in focus, 3 out of focus) of each Freiburg patient into 6 bands (alpha 8-13, beta1 13-21, beta2 21-30, low gamma 30-40, medium gamma 40-70, high gamma 70-120 Hz), sliding window L = 2 s, step S = 1 s, 14 univariate and 8 bivariate features per electrode and band (bivariate against the previous window, MA, or against the zero signal, MB) = 1080 features per window; each window labelled PRE/IKTAL/POST/INTER."
+    },
+    {
+      "Name": "ieeg-nemar repackaging",
+      "Version": "2026-10-07",
+      "Description": "CSV files copied byte-for-byte from Zenodo record 10808054 (md5 verified) into per-patient folders, with JSON sidecars, participants.tsv and README; no value changed. Script in code/."
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.5281/zenodo.10808054",
+      "Version": "1"
+    },
+    {
+      "URL": "http://epilepsy.uni-freiburg.de/freiburg-seizure-prediction-project/eeg-database"
+    }
+  ],
+  "HowToAcknowledge": "Please cite Riccio C, Martone A, Zazzaro G, Pavone L. Training Datasets for Epilepsy Analysis: Preprocessing and Feature Extraction from Electroencephalography Time Series. Data 2024, 9(5), 61. doi:10.3390/data9050061, and the Zenodo record doi:10.5281/zenodo.10808054.",
+  "ReferencesAndLinks": [
+    "https://doi.org/10.3390/data9050061",
+    "https://doi.org/10.5281/zenodo.10808054",
+    "https://doi.org/10.3390/biomedicines10071491",
+    "https://doi.org/10.1016/j.iot.2019.03.002",
+    "https://doi.org/10.1109/HPCC-SmartCity-DSS50907.2020.00175",
+    "https://doi.org/10.5281/zenodo.3455611"
+  ],
+  "DatasetDOI": "doi:10.5281/zenodo.10808054",
+  "Keywords": [
+    "epilepsy",
+    "intracranial EEG",
+    "seizure detection",
+    "feature extraction",
+    "sliding window",
+    "Freiburg EEG database",
+    "derivative",
+    "machine learning"
+  ],
+  "Funding": [
+    "This research received no external funding."
+  ],
+  "EthicsApprovals": [
+    "The training datasets derive from the EEG Database provided by Epilepsy Center Freiburg as well as the Freiburg Center for Data Analysis and Modelling. Authors obtained prior written consent from the Epilepsy Center Freiburg to publish these data or to use them for publication (agreement was signed by one of the authors, L.P., on 16 March 2012). (Riccio et al. 2024, Data 9(5):61, \"Institutional Review Board Statement\"; \"Informed Consent Statement: Not applicable.\")"
+  ]
+}

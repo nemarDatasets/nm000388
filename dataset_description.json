@@ -38,7 +38,7 @@
     "https://doi.org/10.1109/HPCC-SmartCity-DSS50907.2020.00175",
     "https://doi.org/10.5281/zenodo.3455611"
   ],
-  "DatasetDOI": "doi:10.5281/zenodo.10808054",
+  "DatasetDOI": "10.82901/nemar.nm000388",
   "Keywords": [
     "epilepsy",
     "intracranial EEG",
@@ -54,5 +54,6 @@
   ],
   "EthicsApprovals": [
     "The training datasets derive from the EEG Database provided by Epilepsy Center Freiburg as well as the Freiburg Center for Data Analysis and Modelling. Authors obtained prior written consent from the Epilepsy Center Freiburg to publish these data or to use them for publication (agreement was signed by one of the authors, L.P., on 16 March 2012). (Riccio et al. 2024, Data 9(5):61, \"Institutional Review Board Statement\"; \"Informed Consent Statement: Not applicable.\")"
-  ]
+  ],
+  "Version": "1.0.0"
 }

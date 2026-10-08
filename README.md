@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000388-blue)](https://doi.org/10.82901/nemar.nm000388)
+
 # Training datasets for epilepsy analysis: Freiburg-derived sliding-window features (processed-data release)
 
 This is a **processed-data (derivative) dataset**. It redistributes, unchanged, the 20 feature tables of Zenodo record

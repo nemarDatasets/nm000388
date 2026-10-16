@@ -1,5 +1,5 @@
 {
-  "Name": "Training datasets for epilepsy analysis: sliding-window features derived from the Freiburg intracranial EEG database (Riccio et al. 2024), processed-data release",
+  "Name": "Riccio-2024-training-10.3390/data9050061",
   "BIDSVersion": "1.10.0",
   "DatasetType": "derivative",
   "License": "CC-BY-4.0",
@@ -55,5 +55,5 @@
   "EthicsApprovals": [
     "The training datasets derive from the EEG Database provided by Epilepsy Center Freiburg as well as the Freiburg Center for Data Analysis and Modelling. Authors obtained prior written consent from the Epilepsy Center Freiburg to publish these data or to use them for publication (agreement was signed by one of the authors, L.P., on 16 March 2012). (Riccio et al. 2024, Data 9(5):61, \"Institutional Review Board Statement\"; \"Informed Consent Statement: Not applicable.\")"
   ],
-  "Version": "1.0.0"
+  "Version": "1.0.1"
 }

@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Training datasets for epilepsy analysis: sliding-window features derived from the Freiburg intracranial EEG database (Riccio et al. 2024), processed-data release",
-  "description": "This derivative dataset redistributes 20 per-patient feature tables computed from the Freiburg intracranial EEG database for epilepsy analysis. Each row is a 2-second sliding window (1-second step) with 1080 univariate and bivariate features extracted from six electrodes across six frequency bands, labelled by seizure phase (pre-ictal, ictal, post-ictal, inter-ictal). The tables are intended as training data for machine-learning seizure detection and are byte-identical to the original Zenodo release. No raw recordings are included.",
-  "methods_description": "Six intracranial EEG electrodes per patient (three in the epileptic focus, three outside it) were band-pass filtered into six bands (alpha, beta1, beta2, low, medium and high gamma). Features were computed with the Training Builder tool in 2-s windows with a 1-s step from 256 Hz recordings. Each window has 14 univariate and 8 bivariate features per electrode and band, giving 1080 features, and was labelled by seizure phase.",
+  "description": "This derivative dataset redistributes 20 per-patient feature tables computed from the Freiburg intracranial EEG database. Each row is a 2-second sliding window (1-second step) with 1080 univariate and bivariate features across six frequency bands and six electrodes. Windows are labelled by seizure phase (pre-ictal, ictal, post-ictal, inter-ictal), which makes the tables suitable for training machine-learning models for epileptic seizure analysis. No raw recordings are included.",
+  "methods_description": "Six intracranial EEG electrodes per patient (three in the epileptic focus, three outside it) were band-pass filtered into six bands (alpha, beta1, beta2, low gamma, medium gamma, high gamma). Fourteen univariate and eight bivariate features were computed per electrode and band in 2 s windows with a 1 s step, using the authors' Training Builder tool. The source CSV files were copied byte-for-byte from Zenodo and verified by md5 checksum.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -49,13 +49,15 @@
   "keywords": [
     {
       "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+      "subject_scheme": "MeSH"
     },
     {
       "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "subject_scheme": "MeSH"
+    },
+    {
+      "term": "Seizures",
+      "subject_scheme": "MeSH"
     },
     {
       "term": "intracranial EEG"
@@ -67,10 +69,13 @@
       "term": "feature extraction"
     },
     {
-      "term": "Freiburg EEG database"
+      "term": "machine learning"
     },
     {
-      "term": "machine learning"
+      "term": "sliding window"
+    },
+    {
+      "term": "Freiburg EEG database"
     }
   ],
   "related_identifiers": [
